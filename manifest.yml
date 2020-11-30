@@ -1,6 +1,5 @@
 ---
 applications:
-<<<<<<< HEAD
   - name: pal-tracker
     path: build/libs/pal-tracker.jar
     routes:
@@ -11,7 +10,6 @@ applications:
     services:
       - tracker-database
 
-=======
 - name: pal-tracker
   path: build/libs/pal-tracker.jar
   buildpacks:
@@ -30,4 +28,3 @@ applications:
     WELCOME_MESSAGE: Hello from the review environment
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ }, memory_calculator: { stack_threads: 250 } }'
     MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: 'info,health,palTrackerFailure'
->>>>>>> 0297055... Add production tuning parameters to manifest, autoscaling scripts
